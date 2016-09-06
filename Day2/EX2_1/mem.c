@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /*
 int main()
 {
@@ -62,7 +63,7 @@ int main( int argc, char* argv[])
 	{
 		qsort(p, a, sizeof(int), cmpfunc);
 	}
-	else if (*argv[1] == "-r")
+	else if (strcmp(argv[1],"-r") == 0)
 	{
 		qsort(p, a, sizeof(int), cmpfuncr);
 	}
