@@ -23,7 +23,6 @@ int main()
 	
 }
 */
-/*
 int main()
 {
 	int arr[] = {1,2,3,4};
@@ -49,35 +48,7 @@ int main()
 	printf("char c, %c, \t staat op plaats. %p. \n", *c, c);
 	
 }
-*/
-//*
-int main()
-{
-	char str1[5];
-	
-	char str2[5];
-	
-	printf("Enter string 1: ");
-	scanf("%s", str1);
-		
-	printf("Enter string 1: ");
-	scanf("%s", str2);
-	
-	char * ptr1 = NULL;
-	char * ptr2 = NULL;
-	
-	ptr1 = str1;
-	ptr2 = str2;
-	
-	while (*ptr1 != 0 || *ptr2 != 0)
-	{
-		while (*ptr2 == *ptr1)
-		{
-			ptr1++;
-			ptr2++;
-		}
-	}
-}
+
 
 
 

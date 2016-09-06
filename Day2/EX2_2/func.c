@@ -43,7 +43,7 @@ int func(int c){
 	return c;
 }
 */
-
+/*
 double KtC(double K);
 double CtK(double C);
 double FtC(double F);
@@ -103,4 +103,57 @@ double CtF(double C){
 	double F = C + 32;
 	return F;
 }
+*/
+/*
+int recursion(int n);
+int main (){
+	printf("%d\n",recursion(2));
+	
+}
+int recursion(int n){
+	int result = 0;
+	for(int i=0; i<=n; i++){
+		result = result + i;
+	}
+	return result;
+}
+*/
+int count (int number, int* array, int length);
+int max (int* array, int length);
+int main(){
+	int s = 20;
+	int d = 10;
+	int array[s];
+	for (int i = 0; i<s; i++){
+		int r = rand()%d;
+		array[i] = r;
+	}
+	int m = max(array,s);
+	for (int i = 0; i<d; i++){
+		int c = count(i,array,s);
+		if (c > 1){
+			printf("%d zit er %d keer in\n",i,c);
+		}
+	}
+}
+int count (int number, int* array, int length){
+	int coun = 0;
+	for (int i = 0; i<length; i++){
+		int *a = array+i;
+		if(*a==number){
+			coun++;
+		}
+	}
+	return coun;
+}
 
+int max (int* array, int length){
+	int coun = 0;
+	for (int i = 0; i<length; i++){
+		int a = *array+i;
+		if(a > coun){
+			coun = a;
+		}
+	}
+	return coun;
+}
